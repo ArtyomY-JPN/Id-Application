@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Id App</h1>
+        </div>
+        
+
+      
+      <div id="level_div">
+        <progress id="level" value="1" max="5"> 32% </progress>
+        <!-- <h4>Level:&nbsp; </h4><output id="level"> 1</output> -->
+      </div>
+      <div>
+        <h4>Score:&nbsp;</h4><output id="score">0</output>
+      </div>
+      
+    </header>
+    <main>
+       <form onsubmit="check(event)">
+            <p>AI or Real?</p>
+            <input type="text" id="userAnswer" placeholder="Type your answer here" required>
+            <button type="submit">Submit </button>
+        </form>
+         <video id="videoPlayer" width="640" height="360" controls>
+            <!-- <source src="/media/ict/C45F-BA44/web_design/java_script/id_app/file_example_MP4_480_1_5MG.mp4" type="video/mp4"> -->
+            <source src="sample-5s-360p.mp4" type="video/mp4">
+            <!-- <source src="/media/ict/C45F-BA44/web_design/java_script/id_app/184583-873933644_small.mp4" type="video/mp4"> -->
+            <!-- <source src="/media/ict/C45F-BA44/web_design/java_script/id_app/202929-919288883_small.mp4" type="video/mp4"> -->
+            <!-- <source src="/media/ict/C45F-BA44/web_design/java_script/id_app/15741672_960_540_60fps.mp4" type="video/mp4"> -->
+            Your browser does not support the video tag.
+        </video>
+    </main>
+</body>
+</html>
